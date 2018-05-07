@@ -56,4 +56,4 @@ with open('PoGo_USA_Tutorial.json', 'w') as f:
 @app.route('/index')
 def index():
     tweet = {'tweet_display': newTweet}
-    return render_template('home.index', title='Home', tweet=tweet, userID=userID, embed=embed, text=text)
+    return render_template('index.html', title='Index', tweet=tweet, userID=userID, embed=embed, text=text)
