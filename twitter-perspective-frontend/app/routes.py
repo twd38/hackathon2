@@ -53,7 +53,7 @@ with open('PoGo_USA_Tutorial.json', 'w') as f:
     consumer.addEndpoint(embed)
 
 @app.route('/')
-@app.route('/home')
+@app.route('/index')
 def index():
     tweet = {'tweet_display': newTweet}
-    return render_template('home.html', title='Home', tweet=tweet, userID=userID, embed=embed, text=text)
+    return render_template('home.index', title='Home', tweet=tweet, userID=userID, embed=embed, text=text)
