@@ -1,0 +1,24 @@
+h1 {
+  margin: 50px;
+}
+
+#searchBar {
+  left-margin: 50px;
+  background-color: green; /* for visualization purposes */
+  text-align: center;
+}
+
+#title {
+  margin: 100px;
+  display:inline-block;
+}
+
+#or {
+  margin-right: 10px;
+
+}
+
+html, body{
+   background-image: url("capitol.jpg");
+   /* background-color: #cccccc; */
+}
