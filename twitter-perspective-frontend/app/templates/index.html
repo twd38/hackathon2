@@ -1,6 +1,7 @@
 <html>
     <head>
-          <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="styles.css">
+          <script src="app.js"></script>
 
           <!--Import Google Icon Font-->
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,7 +17,30 @@
           <!-- Bootstrap CSS -->
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-          <!-- <title>Hello, world!</title> -->
+          <!-- Spinner-->
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <style>
+          .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite; /* Safari */
+            animation: spin 2s linear infinite;
+          }
+
+          /* Safari */
+          @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+          }
+
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+          </style>
 
 
     </head>
@@ -98,7 +122,7 @@
       </div>
 
         <div class="row">
-          <div class="col s12"><h1 class="text-center">Search for topics within Trump's Appointees' tweets!</h1></div>
+          <div class="col s12"><h1 class="text-center">Search for topics within Trump Appointees' tweets!</h1></div>
         </div>
         <div class="row">
           <div class="col s12"><p></p></div>
@@ -115,30 +139,24 @@
           <div class="col s12 m4 l8 text-center">
             <div id="searchBar" class="input-group mb-3">
               <input id="topicSearch" type="text" class="form-control" placeholder="Search for a topic" aria-label="Username" aria-describedby="basic-addon1">
-              <input type="button" class="btn btn-primary" value="Search" onclick="location.href='https://script.google.com/macros/s/AKfycbwbGufQrHWiAZJTR8AWpxYzPE4njhbpgdPTD3VoBwzRFcAL600/exec?asdf='+document.getElementById('topicSearch').value;" />
+              <input type="button" class="btn btn-primary" value="Search" onclick= "location.href='https://script.google.com/a/cornell.edu/macros/s/AKfycbxAEbyDg82-hAsA1bqe7hA-7SwDqMjXH84Oa9bW-Hw/dev?='+document.getElementById('topicSearch').value;" />
+              <input type="button" class="btn btn-success" value="View all tweets" onclick="location.href='https://docs.google.com/spreadsheets/d/1R8rvzhlCYLi04ZoYw3uOFyWd_hcpwdsOFRQSyVRT0WQ/edit?usp=sharing'" />
+
             </div>
           </div>
 
-          <!-- <h4 id="or"> or</h4> -->
-
-          <!-- <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Appointees
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </div> -->
-
-
-
-
-
-
           <div class="col s12 m4 l2"><p></p></div>
         </div>
+
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+<!--
+        <div class="row">
+            <div class="col s12 d-flex justify-content-center">
+              <p id="load-progress"></p>
+            </div>
+        </div> -->
+
 
 
 
